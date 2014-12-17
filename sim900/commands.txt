@@ -1,0 +1,20 @@
+# Extended Errors
+AT+CMEE=2
+
+# Baud Rate
+AT+IPR=19200
+
+# Check Network Registration
+AT+CREG?
+AT+CREG=1
+
+# Attach to GPRS
+AT+CGATT?
+AT+CGATT=1
+
+# Set APN,USER,PWD
+AT+CSTT="wap.cingular","wap@cingulargprs.com","CINGULAR1"
+
+# PDP Context
+AT+CGDCONT?
+AT+CGDCONT=1,"IP","wap.cingular"
